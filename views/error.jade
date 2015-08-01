@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}
+  //- pre is to show the text format to be exactly the same as what we type. 
+  //- pre can be used to show error stack properly
+  //- #{} to make the code dynamic
